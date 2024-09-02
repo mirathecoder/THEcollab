@@ -1,8 +1,30 @@
-.locations{
-    list-style: none;
-    padding-left: 0%;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.right{
-    display: flex;
+.titlebar {
+  display: flex;
+}
+
+.title {
+  display: inline;
+}
+
+.logo {
+  display: inline;
+  width: 5vw;
+}
+
+.locations {
+  list-style: none;
+  padding-left: 0%;
+}
+
+.right {
+  display: flex;
+}
+
+#map {
+  max-width: 100vw;
 }

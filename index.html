@@ -1,57 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Umap</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="logo.jpeg">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="assets/logo.jpeg" />
+  </head>
+  <body>
+    <div class="titlebar">
+      <img src="assets/logo.jpeg" class="logo" />
+      <h1 class="title">Chitkara University Interactive Map</h1>
+    </div>
 
-    <div class="left">
-      <img src="logo.jpeg" alt="" height="50px" width="50px">  <h1> Chitkara University </h1>
-      <h2> Chitkara University Interactive Map </h2> 
-
-      <div class="socials">
-        <a href="https://www.facebook.com/ChitkaraU/"><img src="fblogo.png" alt="" height="30px" width="30px"></a>
-            <a href="https://twitter.com/ChitkaraU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="twtlogo.png" alt="" height="30px" width="30px"></a>
-            <a href="https://www.instagram.com/chitkarau/?hl=en"><img src="iglogo.png" alt="" height="30px" width="30px"></a>
-            <a href="https://www.youtube.com/@chitkarauniversity"><img src="ytlogo.png" alt="" height="30px" width="30px"></a>
+    <div>
+      <div class="search"><input type="text" placeholder="Search..." /></div>
+      <div class="Locations">
+        <h2>Locations</h2>
+        <ul>
+          <li><a href=""> Turing </a></li>
+          <li><a href=""> Square One</a></li>
+          <li><a href=""> Tuck Shop</a></li>
+          <li><a href=""> Sportorium</a></li>
+          <li><a href=""> Explo </a></li>
+          <li><a href=""> Library</a></li>
+        </ul>
       </div>
-
-<hr class="1"> 
-
-<div class="search"> <input type="text" placeholder="Search..."> </div>
-
-<div class="Locations"> <h2> Locations </h2>
-<ul>
-    <li><a href=""> Turing </a></li>
-    <li><a href=""> Square One</a></li>
-    <li><a href=""> Tuck Shop</a></li>
-    <li><a href=""> Sportorium</a></li>
-    <li><a href=""> Explo </a></li>
-    <li> <a href=""> Library</a></li>
-</ul></div>
-
     </div>
     <div class="right">
-        <img src="chitkaramap.jpg" alt="map" usemap="#chitkara-map">
-
-        <div class="popup" id="popup"> Area Information </div>
+      <img
+        id="map"
+        src="assets/chitkaramap.jpg"
+        alt="map"
+        usemap="#chitkara-map"
+      />
+      <!-- <div class="popup" id="popup"> Area Information </div> -->
     </div>
 
-
     <map name="chitkara-map">
-        <area target="" alt="" title="turing" href="https://www.youtube.com/watch?v=K7lkHyUWEso" coords="1575,878,50" shape="circle">
-        <area target="" alt="" title="square1" href="" coords="1935,1679,43" shape="circle">
-        <area target="" alt="" title="tuckshop" href="" coords="1946,1808,45" shape="circle">
-        <area target="" alt="" title="sportorium" href="" coords="1023,2161,46" shape="circle">
-        <area target="" alt="" title="explo" href="" coords="744,2536,48" shape="circle">
-        <area target="" alt="" title="library" href="" coords="1847,1080,43" shape="circle">
+      <area
+        target=""
+        alt=""
+        title="turing"
+        href="https://www.youtube.com/watch?v=K7lkHyUWEso"
+        coords="1575,878,50"
+        shape="circle"
+      />
+      <area
+        target=""
+        alt=""
+        title="square1"
+        href=""
+        coords="1935,1679,43"
+        shape="circle"
+      />
+      <area
+        target=""
+        alt=""
+        title="tuckshop"
+        href=""
+        coords="1946,1808,45"
+        shape="circle"
+      />
+      <area
+        target=""
+        alt=""
+        title="sportorium"
+        href=""
+        coords="1023,2161,46"
+        shape="circle"
+      />
+      <area
+        target=""
+        alt=""
+        title="explo"
+        href=""
+        coords="744,2536,48"
+        shape="circle"
+      />
+      <area
+        target=""
+        alt=""
+        title="library"
+        href=""
+        coords="1847,1080,43"
+        shape="circle"
+      />
     </map>
 
+    <div class="socials">
+      <a href="https://www.facebook.com/ChitkaraU/"
+        ><img src="./assets/fblogo.png" alt="" height="30px" width="30px"
+      /></a>
+      <a
+        href="https://twitter.com/ChitkaraU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        ><img src="assets/twtlogo.png" alt="" height="30px" width="30px"
+      /></a>
+      <a href="https://www.instagram.com/chitkarau/?hl=en"
+        ><img src="assets/iglogo.png" alt="" height="30px" width="30px"
+      /></a>
+      <a href="https://www.youtube.com/@chitkarauniversity"
+        ><img src="assets/ytlogo.png" alt="" height="30px" width="30px"
+      /></a>
+    </div>
+
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>

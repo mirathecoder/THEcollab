@@ -1,0 +1,8 @@
+.locations{
+    list-style: none;
+    padding-left: 0%;
+}
+
+.right{
+    display: flex;
+}
